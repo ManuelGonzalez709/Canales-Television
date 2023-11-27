@@ -1,0 +1,248 @@
+@font-face {
+  font-family: MiFuente;
+  src: url("./Raleway-VariableFont_wght.ttf");
+  
+}
+@font-face {
+  font-family: MiFuente2;
+  src: url("./PTSans-BoldItalic.ttf");
+}
+
+::selection {
+  background-color: #FFC0CB; 
+  color: #FFFFFF; 
+}
+
+#fecha_y_hora{
+  font-family: MiFuente2;
+}
+button,input[type ="submit"]{
+  font-family: MiFuente2;
+}
+button:hover,input:hover,select:hover{
+  cursor: url(cursor2.png),pointer;
+}
+*{
+  cursor: url(cursor.png),pointer;
+  font-family: MiFuente;
+}
+body{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 5%;
+    overflow-y: scroll;
+    background-color: #FFE9ED;
+}
+/*Estilos de la tabla de mostrarlo todo */
+.Programas{
+    display: flex;
+    height: 400px;
+    width: 99.9%;
+    overflow-y: scroll;
+}
+.Contenedor_Canal{
+    display: flex;
+    height: 99.9%;
+    background-color: rgb(251, 203, 159);
+}
+.Cabecera_Tabla>td{
+    background-color: red;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.Cabecera_Programas{
+  background-color: rgba(244, 123, 153, 0.8); 
+  font-size: 25px;
+  color: white;
+}
+  .Pagina_Principal>img{
+      width: 30%;
+      height: 20%;
+    margin: 0;
+}
+.Imagen>img{
+    width: 30px;
+    margin: 23px;
+}
+.Pagina_Principal{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-items: baseline;
+}
+.Texto_Imagen{
+    font-size: 11px;
+}
+.tabla1{  
+    align-items: center;
+    margin: 30px;
+}
+/*Programas en directo*/
+.ProgramaEnDirecto{
+    margin-bottom: 2%;
+}
+
+
+/*Barra de scroll*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 44, 83, 0.4);
+  border-radius: 30px;
+}
+
+/* Estilos para la barra de desplazamiento en hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(250, 142, 176, 0.879);
+}
+
+/* Estilos para la barra de desplazamiento en scroll */
+::-webkit-scrollbar-thumb:active {
+  background-color:  #ffffff;
+}
+.tabla1{
+  overflow-y: scroll;
+}
+
+.Titulo:hover{
+  cursor: url(cursor2.png),pointer;
+  background-color: rgba(244, 123, 153, 0.8); 
+  color:white;
+}
+
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #b10e0e;
+  border-top: 1px solid #b10e0e;;
+}
+tr:hover {
+  background-color: #7a010175;
+}
+tr{
+  background-color: rgba(244, 123, 153, 0.31)
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+tr {
+  animation: slideIn 0.5s ease;
+}
+
+/* Estilos generales para los botones y los input submit */
+button, input[type="submit"] {
+    background-color: rgba(244, 123, 153, 0.8);
+    border: unset;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+button:hover, input[type="submit"]:hover {
+  background-color: rgba(253, 252, 254, 0.8);
+  color: rgba(244, 123, 153, 0.8);
+  border: 1px dotted rgba(244, 123, 153, 0.8);
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+/*Para el select*/
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid rgba(244, 123, 153, 0.8);
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+select:hover {
+  border-color: rgba(122, 1, 1, 0.75);
+  transform: scale(1.05);
+}
+
+select:focus {
+  outline: none;
+  border-color: rgba(122, 1, 1, 0.9);
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+  transform: scale(1.02);
+}
+
+select option {
+  background-color: rgba(244, 123, 153, 0.8);
+  color: #fff;
+}
+
+select option:hover {
+  background-color: rgba(122, 1, 1, 0.8);
+}
+
+select option:checked {
+  background-color: rgba(122, 1, 1, 1);
+  font-weight: bold;
+}
+label{
+  margin-right: 3px;
+  margin-left: 12px;
+}
+input[type = "submit"]{
+  margin-left: 13px;
+}
+/*Inout Time*/
+input[type="time"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px solid rgba(244, 123, 153, 0.8);
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="time"]:hover {
+  border-color: rgba(122, 1, 1, 0.75);
+  transform: scale(1.05);
+}
+
+input[type="time"]:focus {
+  outline: none;
+  border-color: rgba(122, 1, 1, 0.9);
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+  transform: scale(1.02);
+}
